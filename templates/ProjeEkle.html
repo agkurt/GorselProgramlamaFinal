@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <title>Proje Ekle Sayfası</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/icon.png') }}">
+
+</head>
+
+<footer>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Proje ekle</h2>
+            <form action="/proje_ekle" method="post">
+                <input type="text" name="projeAdi" placeholder="Proje Adı" required>
+                <input type="text" name="projeAciklama" placeholder="Proje Açıklama" required>
+                <button type="submit">Proje Ekle</button>
+            </form>
+        </div>
+    </section>
+</footer>
+
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="ProjeEkle.html"><img src="{{ url_for('static', filename='assets/images/apple-logo.png') }}" alt="Apple Logo" class="logo"></a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+</body>
+
+</html>

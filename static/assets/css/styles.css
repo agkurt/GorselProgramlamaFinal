@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.about {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects {
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 15%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-page {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-page img {
+    max-width: 15%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #f8f8f8;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+

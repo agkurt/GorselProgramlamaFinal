@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <title>Ahmet's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="{{ url_for('static', filename='assets/images/apple-logo.png') }}" alt="Apple Logo" class="logo"></a></li>
+                    <li><a href="#abou t">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h1>Ahmet Göktürk Kurt</h1>
+            <p>IOS Developer</p>
+            <p>Passionate about creating amazing mobile experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="project">
+                <br>
+
+                    {% for project in data %}
+                    {% if project[0] == 1 %}
+                    <div class="project">
+                        <p>{{ project[1] }}</p>
+                    </div>
+                    {% endif %}
+                 {% endfor %}
+
+                <p>
+                    {% for project in data %}
+                     {% if project[0] == 1 %}
+                    <div class="project">
+                        <p>{{ project[2] }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %} 
+
+                </p>
+                            
+                <img src="{{ url_for('static', filename='assets/images/WordRem/image (3).jpg') }}" alt="WordRem">
+                <img src="{{ url_for('static', filename='assets/images/WordRem/image (1).jpg') }}" alt="WordRem">
+                <img src="{{ url_for('static', filename='assets/images/WordRem/image (2).jpg') }}" alt="WordRem"><br><br>
+                <a href="{{ url_for('wordrem') }}" class="btn">Go to WordRem</a>
+
+
+            </div>
+            <div class="project">
+                <br>
+                <h3>
+                    {% for project in data %}
+                    {% if project[0] == 2 %}
+                    <div class="project">
+                        <p>{{ project[1] }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </h3>
+                <p>
+                    {% for project in data %}
+                    {% if project[0] == 1 %}
+                        <div class="project">
+                            <p>{{ project[2] }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </p>
+            
+                <img src="{{ url_for('static', filename='assets/images/AutoMotive/image (1).jpg') }}" alt="AutoMotive">
+                <img src="{{ url_for('static', filename='assets/images/AutoMotive/image (2).jpg') }}" alt="AutoMotive">
+                <img src="{{ url_for('static', filename='assets/images/AutoMotive/image (3).jpg') }}" alt="AutoMotive"><br><br>
+                <a href="{{ url_for('automotive') }}" class="btn">Go to AutoMotive</a>
+
+            </div>
+            <div class="project">
+                <br>
+                <h3>
+                    {% for project in data %}
+                    {% if project[0] == 3 %}
+                    <div class="project">
+                        <p>{{ project[1] }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </h3>
+                <p>
+                    {% for project in data %}
+                    {% if project[0] == 3 %}
+                    <div class="project">
+                        <p>{{ project[2] }}</p>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </p>
+                <img src="{{ url_for('static', filename='assets/images/Lupa/image (2).jpg') }}" alt="Lupa">
+                <img src="{{ url_for('static', filename='assets/images/Lupa/image (1).jpg') }}" alt="Lupa"><br><br>
+                <a href="{{ url_for('lupa') }}" class="btn">Go to Lupa</a>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Let's collaborate on your next project. Reach out to me!</p>
+                <a target= "_blank" href="mailto:ahmetgokturkkurt3@gmail.com" class="btn">Email Me</a>
+                <a target= "_blank" href="https://linkedin.com/in/agkurt" class="btn">Linkedin</a>
+                <a target= "_blank" href="https://github.com/agkurt" class="btn">Github</a>
+            </div>
+        </section>
+    </footer>
+
+    <footer>
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <h2>Projeler</h2>
+                <ul>
+                    {% for project in projects %}
+                        <li>{{ project[1] }} - {{ project[2] }}</li>
+                    {% endfor %}
+                </ul>
+    
+                <!-- ProjeEkle.html sayfasına gitmek için buton -->
+                <a href="/proje_ekle_sayfasi" class="btn">Proje Ekle Sayfası</a>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+
+
+
+</html>
+

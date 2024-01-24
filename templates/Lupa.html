@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <title>Lupa</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="{{ url_for('static', filename='images/apple-logo.png') }}" alt="Apple Logo" class="logo"></a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h1>Lupa</h1>
+            <p>Lupa is a food ordering application.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+                <div class="project-page">
+                <img src="{{ url_for('static', filename='images/Lupa/image (2).jpg') }}" alt="Lupa">
+                <img src="{{ url_for('static', filename='images/Lupa/image (1).jpg') }}" alt="Lupa"><br><br>
+                
+                <a  target= "_blank" href="https://github.com/agkurt/Lupa-Food-App" class="btn">Lupa Github Page</a><br><br>
+               
+                <br>
+                    
+                    
+                <ul>Features:</ul>
+                <li>Lupa food app is a food ordering application. The user can order by selecting the desired dish on the screen.</li>                 
+                <br>
+
+                <ul>Technologies I Used for Lupa:</ul>
+                <li>UIKit</li>
+                <li>Storyboard</li>
+                <li>MVC design pattern</li>
+                <li>Kingfisher</li>
+                <li>Podfile</li>
+                <li>Cocopoads</li>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Let's collaborate on your next project. Reach out to me!</p>
+                <a target= "_blank" href="mailto:ahmetgokturkkurt3@gmail.com" class="btn">Email Me</a>
+                <a target= "_blank" href="https://linkedin.com/in/agkurt" class="btn">Linkedin</a>
+                <a target= "_blank" href="https://github.com/agkurt" class="btn">Github</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

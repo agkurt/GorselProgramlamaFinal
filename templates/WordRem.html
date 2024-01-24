@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <title>WordRem</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="{{ url_for('static', filename='images/apple-logo.png') }}" alt="Apple Logo" class="logo"></a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h1>WordRem</h1>
+            <p>WordRem is a simple and easy to use application that helps you to learn new words in a foreign language.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+                <div class="project-page">
+                <img src="{{ url_for('static', filename='images/WordRem/image (3).jpg') }}" alt="WordRem">
+                <img src="{{ url_for('static', filename='images/WordRem/image (1).jpg') }}" alt="WordRem">
+                <img src="{{ url_for('static', filename='images/WordRem/image (2).jpg') }}" alt="WordRem"><br><br>
+                <a  target= "_blank" href="https://github.com/agkurt/WordRem" class="btn">WordRem Github Page</a><br><br>
+               
+                <p>WordRem is a user-friendly application designed to enhance language learning. Users can create customized decks of cards and manage different content on each card. For instance, you can create an English deck and display the word on the front of each card, its meaning on the back, and an example sentence.</p>
+                    <br>
+                    
+                    
+                <ul>Features:</ul>
+                <li>Creation and Management: Create decks and add, edit, or delete cards with unique content for each.</li> 
+                <li>Double-Sided Cards: Flip cards to view both the word and its meaning.</li>
+                <li>Integration: Safely store and synchronize your data. Login Screen: User-friendly login screen to save users' progress. WordRem not only personalizes your language learning experience for effectiveness but also stands out with its ease of use. It is designed to guide you on your language learning journey.</li>
+                
+                <br>
+                <ul>Technologies I Used for WordRem:</ul>
+                <li>UIKit</li>
+                <li>Programmatic</li>
+                <li>Firebase Auth</li>
+                <li>Firebase Firestore</li>
+                <li>SwipeKit for collectionView</li>
+                <li>MVC design pattern</li>
+                <li>CompositionalLayout</li>
+                <li>Lightweight network service</li>
+                <li>Activity Indicator</li>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Let's collaborate on your next project. Reach out to me!</p>
+                <a target= "_blank" href="mailto:ahmetgokturkkurt3@gmail.com" class="btn">Email Me</a>
+                <a target= "_blank" href="https://linkedin.com/in/agkurt" class="btn">Linkedin</a>
+                <a target= "_blank" href="https://github.com/agkurt" class="btn">Github</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
